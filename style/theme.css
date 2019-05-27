@@ -1,0 +1,93 @@
+/* @author    Shmish  "shmish90@gmail.com" */
+/* @version   1.0.0   "5/26/2019" */
+/* @legal     MIT     "(c) Chris K. Schmitt" */
+
+
+/* Baselines and theme colors */
+:root {
+  font-size: 62.5%;
+  font-family: "Roboto", "Open Sans", sans-serif;
+
+  --text-dark: rgba(32, 33, 36, 1.0);
+  --text-medium: rgba(95, 99, 104, 1.0);
+  --text-light: rgba(255, 255, 255, 1.0);
+  --text-blue: rgba(61, 88, 143, 1.0);
+
+  --backgound-dark: rgba(247, 247, 248, 1.0);
+  --backgound-light: rgba(255, 255, 255, 1.0);
+}
+
+
+/* Typography */
+h1, h2, h3, h4, h5 { 
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+
+  margin-top: 0;
+  margin-bottom: 1rem;
+
+  background: unset;
+  color: var(--text-dark);
+}
+
+h1 { font-size: 5rem; }
+h2 { font-size: 4rem; }
+h3 { font-size: 3rem; }
+h4 { font-size: 2rem; }
+h5 { font-size: 1rem; }
+
+p, span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.5;
+
+  margin-top: 0;
+  margin-bottom: 2rem;
+
+  background: unset;
+  color: var(--text-medium);
+}
+
+a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  text-decoration: none;
+
+  margin-top: 0;
+  margin-bottom: 2rem;
+
+  background: unset;
+  color: var(--text-blue);
+}
+
+span[language] {
+  font-weight: 400;
+  font-size: 1.3rem;
+
+  margin-left: 1em;
+  border-radius: 2px;
+
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+
+/* Colors */
+.bg-dark { background-color: var(--backgound-dark); }
+.bg-light { background-color: var(--backgound-light); }
+
+.txt-dark { color: var(--text-dark); }
+.txt-medium { color: var(--text-medium); }
+.txt-light { color: var(--text-light); }
+
+[language="None"]       { background: #ffffff; color: #000000; }
+[language="JavaScript"] { background: #f1e05a; color: #000000; }
+[language="TypeScript"] { background: #2b7489; color: #ffffff; }
+[language="HTML"]       { background: #e44b23; color: #ffffff; }
+[language="Rust"]       { background: #dea584; color: #000000; }
+[language="C"]          { background: #555555; color: #ffffff; }

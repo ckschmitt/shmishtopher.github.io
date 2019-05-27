@@ -1,0 +1,65 @@
+/* @author    Shmish  "shmish90@gmail.com" */
+/* @version   1.0.0   "5/26/2019" */
+/* @legal     MIT     "(c) Chris K. Schmitt" */
+
+
+/* Section Sizing */
+.full-section {
+  width: 100%;
+  height: 100vh;
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+
+.div-1000 {
+  width: 90%;
+  max-width: 1000px;
+}
+
+.div-700 {
+  width: 90%;
+  max-width: 700px;
+
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.div-500 {
+  width: 90%;
+  max-width: 500px;
+
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.div-300 {
+  width: 300px;
+  min-width: 315px;
+  margin-bottom: 20px;
+}
+
+
+/* Flex Boxes */
+.center-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-column-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.center-row-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}

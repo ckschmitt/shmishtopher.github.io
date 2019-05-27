@@ -1,0 +1,75 @@
+<svg viewBox="0 0 200 200" width="200" height="200" preserveAspectRatio="xMaxYMin meet" shape-rendering="auto" xmlns="http://www.w3.org/2000/svg">
+  <!-- Filter -->
+  <filter id="gooey">
+    <feGaussianBlur stdDeviation="5" in="SourceGraphic" result="blur" />
+    <feColorMatrix mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 30 -20" in="blur" result="goo" />
+    <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+  </filter>
+  
+  <!-- Gradients -->
+  <linearGradient id="yellow" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" style="stop-color:#FFCC00;stop-opacity:1" />
+    <stop offset="100%" style="stop-color:#FF9500;stop-opacity:1" />
+  </linearGradient>
+  
+  <linearGradient id="pink" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" style="stop-color:#FF2D55;stop-opacity:1" />
+    <stop offset="100%" style="stop-color:#FF3B30;stop-opacity:1" />
+  </linearGradient>
+  
+  <linearGradient id="blue" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" style="stop-color:#007AFF;stop-opacity:1" />
+    <stop offset="100%" style="stop-color:#5856D6;stop-opacity:1" />
+  </linearGradient>
+  
+  
+  <!-- blob -->
+  <g style="filter:url('#gooey')" fill="#000000">
+    <circle id="b1" cx="95" cy="80" r="20" />
+    <circle id="b2" cx="120" cy="105" r="20" />
+    <circle id="b3" cx="95" cy="120" r="20" />
+  </g>
+  
+  <!-- orbs -->
+  <circle id="c1" cx="75" cy="60" r="15" fill="url(#pink)" />
+  <circle id="c2" cx="135" cy="100" r="10" fill="url(#yellow)" />
+  <circle id="c3" cx="65" cy="150" r="17" fill="url(#blue)" />
+
+  <style>
+    @keyframes blob {
+      0%{transform:translate(10px, -10px); r: 20;}
+      100%{transform:translate(-10px, 10px); r: 40;}
+    }
+
+    @keyframes hover {
+      0%{transform:translate(0, -3px);}
+      100%{transform:translate(0, 3px);}
+    }
+
+    #b1 {animation: blob 13s ease-in-out alternate infinite;}
+    #b2 {animation: blob 8s ease-in-out alternate infinite;}
+    #b3 {animation: blob 7s ease-in-out alternate infinite;}
+
+    #c1 {
+      animation: hover 4s ease-in-out alternate infinite;
+      transition: r .3s ease-out;
+    }
+    #c2 {
+      animation: hover 2.5s ease-in-out alternate infinite;
+      transition: r .3s ease-out;
+    }
+    #c3 {
+      animation: hover 3s ease-in-out alternate infinite;
+      transition: r .3s ease-out;
+    }
+
+    #c1:hover {r: 20}
+    #c2:hover {r: 15}
+    #c3:hover {r: 20}
+
+    svg {
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+</svg>

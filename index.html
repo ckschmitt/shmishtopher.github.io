@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+
+
+<!-- @author    Shmish "shmish90@gmail.com" -->
+<!-- @version   1.0.0 "5/26/2019" -->
+<!-- @legal     MIT "(c) Shmish" -->
+
+
+
+<html>
+  <head>
+    <meta name="description" content="Make amazing things">
+    <meta name="keywords" content="shmish, shmishtopher">
+    <meta name="author" content="Shmish - shmish90@gmail.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap">
+
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/theme.css">
+    <link rel="stylesheet" href="style/layout.css">
+    <link rel="stylesheet" href="style/animation.css">
+
+    <link rel="preload" as="image" href="assets/glob.svg">
+    <link rel="preload" as="image" href="assets/name.svg">
+  </head>
+
+  <body>
+    <section class="full-section bg-light center-row">
+      <div class="div-1000 center-row">
+        <div class="div-500 center-column-left">
+          <h3>Hello, my name is <img style="height: 1em" src="assets/name.svg"></h3>
+          <p>Programmer, Designer, <span id="type">Elixir Enthusiast</span></p>
+          <p>I'm a studdent and maker of things currently studing computer science at CCSU. Check out some of my recent work below.</p>
+        </div>
+
+        <div class="div-500 center-row">
+          <object style="width: 100%" data="assets/glob.svg">
+            <img style="width: 100%" src="assets/glob.svg">
+          </object>
+        </div>
+      </div>
+    </section>
+
+    <section class="full-section bg-dark center-row">
+      <div class="div-700 center-column-left">
+        <h1 style="font-weight: 300; margin-bottom: 6rem">Latest Work.</h1>
+        <div id="repos" class="center-row-wrap"></div>
+      </div>
+    </section>
+  </body>
+
+  <template>
+    <div class="div-300">
+      <a href="#">Loading...<span language="None">None</span></a>
+      <p>Details coming soon...</p>
+    </div>
+  </template>
+
+  <script src="script/typewriter.js"></script>
+  <script src="script/repository.js"></script>
+</html>
