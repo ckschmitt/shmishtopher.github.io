@@ -92,3 +92,5 @@ span[language] {
 [language="Rust"]       { background: #dea584; color: #000000; }
 [language="C"]          { background: #555555; color: #ffffff; }
 [language="CSS"]        { background: #563d7c; color: #ffffff; }
+[language="Assembly"]   { background: #6e4c13; color: #ffffff; }
+[language="TeX"]        { background: #3D6117; color: #ffffff; }
