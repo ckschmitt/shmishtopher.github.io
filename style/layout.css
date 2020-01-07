@@ -55,6 +55,18 @@
   align-items: flex-start;
 }
 
+.center-text-vertical {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.center-vertical-align {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .center-row-wrap {
   display: flex;
   flex-direction: row;
