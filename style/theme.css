@@ -95,4 +95,4 @@ span[language] {
 [language="Assembly"]   { background: #6e4c13; color: #ffffff; }
 [language="TeX"]        { background: #3d6117; color: #ffffff; }
 [language="Java"]       { background: #b07219; color: #ffffff; }
-[language="Verilog"]    { background: #b2b7f8; color: #ffffff; }
+[language="Verilog"]    { background: #b2b7f8; color: #000000; }
