@@ -5,7 +5,7 @@
 
 fetch('https://api.github.com/users/shmishtopher/repos?sort=pushed&type=owner')
   .then(response => response.json())
-  .then(repos => repos.slice(0, 8))
+  .then(repos => repos.slice(0, 6))
   .then(repos => {
     for (const repo of repos) {
       const teplate = document.querySelector('template')
