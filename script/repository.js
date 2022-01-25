@@ -23,7 +23,7 @@ fetch('https://api.github.com/users/shmishtopher/repos?sort=created&type=owner')
   })
 
 
-fetch('https://gh-pinned-repos-5l2i19um3.vercel.app/?username=shmishtopher')
+fetch('https://gh-pinned-repos.egoist.sh/?username=shmishtopher')
   .then(response => response.json())
   .then(repos => {
     for (const repo of repos) {
