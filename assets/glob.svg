@@ -37,18 +37,18 @@
 
   <style>
     @keyframes blob {
-      0%{transform:translate(10px, -10px); r: 20;}
-      100%{transform:translate(-10px, 10px); r: 40;}
+      0% { transform: translate(10px, -10px); r: 20px; }
+      100% { transform: translate(-10px, 10px); r: 40px; }
     }
 
     @keyframes hover {
-      0%{transform:translate(0, -3px);}
-      100%{transform:translate(0, 3px);}
+      0% { transform:translate(0, -3px); }
+      100%{ transform:translate(0, 3px); }
     }
 
-    #b1 {animation: blob 13s ease-in-out alternate infinite;}
-    #b2 {animation: blob 8s ease-in-out alternate infinite;}
-    #b3 {animation: blob 7s ease-in-out alternate infinite;}
+    #b1 { animation: blob 13s ease-in-out alternate infinite; }
+    #b2 { animation: blob 8s ease-in-out alternate infinite; }
+    #b3 { animation: blob 7s ease-in-out alternate infinite; }
 
     #c1 {
       animation: hover 4s ease-in-out alternate infinite;
@@ -63,9 +63,9 @@
       transition: r .3s ease-out;
     }
 
-    #c1:hover {r: 20}
-    #c2:hover {r: 15}
-    #c3:hover {r: 20}
+    #c1:hover { r: 20px }
+    #c2:hover { r: 15px }
+    #c3:hover { r: 20px }
 
     svg {
       height: 100%;
