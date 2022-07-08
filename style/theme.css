@@ -72,13 +72,14 @@ a {
   border-bottom-style: solid;
   border-bottom-color: #9aa2f1;
 
-  transition-property: background-color;
+  transition-property: background-color, color;
   transition-delay: 100ms;
   transition-duration: 150ms;
   transition-timing-function: linear;
 }
 
 .link:hover {
+  color: white;
   background: #9aa2f1;
 }
 
